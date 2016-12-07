@@ -7,14 +7,18 @@ ion-view{
 
 .weatherTitle{
   color: white;
+  text-shadow: 1px 4px grey;
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: 4em;
   font-style: Helvetica;
   text-align: center;
+  border-style: dashed;
+  font-weight: bold;
 }
 
 .temps{
   padding: 10px;
+  text-shadow: 1px 4px grey;
   color: white;
   text-transform: uppercase;
   font-size: 3em;
@@ -23,6 +27,7 @@ ion-view{
 }
 
 .desc{
+  text-shadow: 1px 4px grey;
   padding: 10px;
   color: white;
   text-transform: uppercase;
@@ -40,6 +45,8 @@ ion-view{
   background-image: url("../img/background.jpg");
   background-color: blue;
   color: white;
+  text-shadow: 1px 2px grey;
+
 }
 
 .menu-left {
@@ -57,20 +64,28 @@ input[type='text']{
   color: white;
   text-align :center;
   font-weight: bold;
+  text-shadow: 1px 1px grey;
+
 }
 
 .ion-ios-search-strong{
   color: white;
+  text-shadow: 1px 1px grey;
+
 }
 
 .dark {
   background-image: url("../img/background.jpg");
   color: white;
   border: 0px;
+  text-shadow: 1px 2px grey;
+
 }
 
 a{
   color: white!important;
+  text-shadow: 1px 1px grey;
+
 }
 
 ion-content{

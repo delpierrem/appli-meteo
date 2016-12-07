@@ -11,47 +11,47 @@ angular.module('weather.controller', [])
   };
   $scope.title="Météo";
   $scope.city = $stateParams.city;
-  var url = DataConfig.apiUrl + $scope.city + DataConfig.units + DataConfig.appid ;
+  var url = DataConfig.apiUrl + $scope.city + DataConfig.units+ DataConfig.lang + DataConfig.appid  ;
   $http.get(url).success(function(data){
     $scope.meteo.city = data.name;
     $scope.meteo.description =data.weather[0].description;
     $scope.meteo.temp = Math.round(data.main.temp);
     $scope.meteo.main =data.weather[0].main;
 
-    if ($scope.meteo.description =="clear sky"){
-      $scope.meteo.icon= "../img/sun.png" ;
+    if ($scope.meteo.description =="ensoleillé"){
+      $scope.meteo.icon= "sun.png" ;
       return $scope.meteo.icon;
     }
-    else if ($scope.meteo.description =="scattered clouds"){
-      $scope.meteo.icon= "../img/scatclouds.png" ;
+    else if ($scope.meteo.description =="nuageux"){
+      $scope.meteo.icon= "scatclouds.png" ;
       return $scope.meteo.icon;
     }
-    else if ($scope.meteo.description =="broken clouds"){
-      $scope.meteo.icon= "../img/broken.png" ;
+    else if ($scope.meteo.description =="nuageux"){
+      $scope.meteo.icon= "broken.png" ;
       return $scope.meteo.icon;
     }
-    else if ($scope.meteo.description =="haze"){
-      $scope.meteo.icon= "../img/haze.png" ;
+    else if ($scope.meteo.description =="nuageux"){
+      $scope.meteo.icon= "haze.png" ;
       return $scope.meteo.icon;
     }
     else if ($scope.meteo.description =="light snow"){
-      $scope.meteo.icon= "../img/light_snow.png" ;
+      $scope.meteo.icon= "light_snow.png" ;
       return $scope.meteo.icon;
     }
     else if ($scope.meteo.description =="fog"){
-      $scope.meteo.icon= "../img/fog.png" ;
+      $scope.meteo.icon= "fog.png" ;
       return $scope.meteo.icon;
     }
     else if ($scope.meteo.description =="overcast clouds"){
-      $scope.meteo.icon= "../img/overcast.png";
+      $scope.meteo.icon= "overcast.png";
       return $scope.meteo.icon;
     }
     else if ($scope.meteo.description =="light rain "){
-      $scope.meteo.icon= "../img/light_rain.png";
+      $scope.meteo.icon= "light_rain.png";
       return $scope.meteo.icon;
     }
     else if ($scope.meteo.description =="moderate rain"){
-      $scope.meteo.icon= "../img/moderate_rain.png";
+      $scope.meteo.icon= "moderate_rain.png";
       return $scope.meteo.icon;
     }
 

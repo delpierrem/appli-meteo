@@ -1,7 +1,7 @@
 <ion-view view-title="{{title}}">
   <ion-content class="padding">
-        <img src="{{meteo.icon}}"/>
-        <h2 class="weatherTitle">Météo à {{meteo.city}}</h2>
+        <img src="../img/{{meteo.icon}}"/>
+        <h2 class="weatherTitle">{{meteo.city}}</h2>
         <p class="temps">{{meteo.temp}}°</p>
           <p class="desc">{{meteo.description}}</p>
 
@@ -9,5 +9,6 @@
         <i class="icon ion-ios-search-strong"></i>
         Rechercher pour une autre ville
       </a>
+
   </ion-content>
 </ion-view>
