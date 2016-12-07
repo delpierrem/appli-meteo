@@ -1,0 +1,13 @@
+<ion-view view-title="{{title}}">
+  <ion-content class="padding">
+    <h1 class="weatherTitle">Pop Météo</h1>
+    <form class="list" ng-submit="search(city)">
+      <label class="item item-input">
+        <input type="text" placeholder="Ville" ng-model="city">
+      </label>
+      <button class="button button-full button-assertive">
+        Submit
+      </button>
+    </form>
+  </ion-content>
+</ion-view>

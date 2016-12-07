@@ -1,0 +1,78 @@
+/* Empty. Add your own CSS if you like */
+ion-view{
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.weatherTitle{
+  color: white;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-style: Helvetica;
+  text-align: center;
+}
+
+.temps{
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-style: Helvetica;
+  text-align: center;
+}
+
+.desc{
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-style: Helvetica;
+  text-align: center;
+}
+
+
+.item-complex .item-content, .item-radio .item-content {
+  position: relative;
+  z-index: 2;
+  padding: 16px 49px 16px 16px;
+  border: none;
+  background-image: url("../img/background.jpg");
+  background-color: blue;
+  color: white;
+}
+
+.menu-left {
+  left: 0;
+  background-image: url("../img/background.jpg");
+}
+
+.item-input{
+  background-image: url("../img/background.jpg");
+  border: 0px;
+}
+
+input[type='text']{
+  border: 0;
+  color: white;
+  text-align :center;
+  font-weight: bold;
+}
+
+.ion-ios-search-strong{
+  color: white;
+}
+
+.dark {
+  background-image: url("../img/background.jpg");
+  color: white;
+  border: 0px;
+}
+
+a{
+  color: white!important;
+}
+
+ion-content{
+  text-align: center;
+}
