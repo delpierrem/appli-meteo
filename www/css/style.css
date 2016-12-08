@@ -91,3 +91,10 @@ a{
 ion-content{
   text-align: center;
 }
+
+.white{
+  color: black;
+  font-weight: bold;
+  text-shadow: 2px 2px grey;
+  text-transform: uppercase;
+}

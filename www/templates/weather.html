@@ -1,7 +1,7 @@
-<ion-view view-title="{{title}}">
+<ion-view view-title="Météo à {{city}}">
   <ion-content class="padding">
         <img src="../img/{{meteo.icon}}"/>
-        <h2 class="weatherTitle">{{meteo.city}}</h2>
+        <h2 class="weatherTitle">{{meteo.city}} {{meteo.country}}</h2>
         <p class="temps">{{meteo.temp}}°</p>
           <p class="desc">{{meteo.description}}</p>
 
